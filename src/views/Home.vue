@@ -3,9 +3,9 @@
     <h1>All Destinations</h1>
     <div class="destinations">
       <div v-for="destination in destinations" :key="destination.name">
-        <router-linnk :to="{name: 'DestinationDetails', params: {id: destination.id} }">
+        <router-link :to="{name: 'DestinationDetails', params: {id: destination.id} }">
           <h2>{{ destination.name }}</h2>
-        </router-linnk>
+        </router-link>
         <figure>
           <router-link :to="{name: 'DestinationDetails', params: {id: destination.id}}">
             <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name">
