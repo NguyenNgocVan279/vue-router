@@ -39,6 +39,6 @@ img {
 p {
     margin: 0 40px;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
 }
 </style>

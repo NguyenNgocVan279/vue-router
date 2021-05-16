@@ -42,5 +42,13 @@ img {
   display: flex;
   justify-content: space-between;
 }
+a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: underline;
+  
+}
 </style>
 
