@@ -3,9 +3,9 @@
         <h1>{{destination.name}}</h1>
         <div class="destination-datails">
             <img :src="require(`@/assets/${destination.image}`)" :alt="destination.name">
-            
+            <p>{{destination.description}}</p>
         </div>
-        <p>{{destination.description}}</p>
+        
     </section>
 </template>
 <script>
@@ -32,13 +32,13 @@ img {
     width: 100%;
     max-height: 400px;
 }
-.destination-details {
+.destination-datails {
     display: flex;
     justify-content: space-between;
 }
 p {
     margin: 0 40px;
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
 }
 </style>
