@@ -1,5 +1,6 @@
-<template>
+<template>    
     <div>
+        <GoBack />
         <section class="destination">
             <h1>{{destination.name}}</h1>
             <div class="destination-datails">
@@ -25,7 +26,11 @@
 </template>
 <script>
 import store from "@/store.js";
+import GoBack from "@/components/GoBack";
 export default {
+    components: {
+        GoBack
+    },
     data() {
         return {}
     },
@@ -60,7 +65,8 @@ p {
     font-size: 20px;
     text-align: left;
 }
-.experiences {
+.cards {
+    display: flex;
     justify-content: space-between;
 }
 .cards img {
