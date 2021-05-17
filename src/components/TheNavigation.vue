@@ -29,7 +29,13 @@ export default {
 </script>
 <style scoped>
 #nav {
-    display: flex;    
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    z-index: 1;    
 }
 
 #nav a {
